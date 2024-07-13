@@ -223,3 +223,21 @@ footer textarea{
     margin-bottom: 24px;
     border: none;
 }
+
+/* responsive styles */
+
+.hide{
+    display: none;
+}
+
+@media screen and (max-width: 576px) {
+    .skills-container, .resume-container, footer, .about-items{
+       flex-direction: column;
+    }
+    footer, .about{
+        padding: 20px;
+    }
+    .footer-column{
+        width: calc(100% - 40px);
+    }
+}
