@@ -231,13 +231,34 @@ footer textarea{
 }
 
 @media screen and (max-width: 576px) {
-    .skills-container, .resume-container, footer, .about-items{
+    .skills-container, .resume-container, footer, .about-items, .banner, nav, nav > ul {
        flex-direction: column;
+    }
+    nav > ul{
+        gap: 20px;
+    }
+    .header{
+        background-image: none;
+    }
+    .banner{
+        margin: 20px;
+    }
+    .banner-profile-pic{
+        width: 100%;
+    }
+    .btn-primary{
+        margin-bottom: 20px;
     }
     footer, .about{
         padding: 20px;
     }
     .footer-column{
         width: calc(100% - 40px);
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .banner{
+        flex-direction: column;
     }
 }
